@@ -17,9 +17,3 @@ Rfiles/*
 !Rfiles/*.R
 
 
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-.Rproj.user
-.Rproj.user/*.*
-

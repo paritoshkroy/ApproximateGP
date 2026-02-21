@@ -1,8 +1,3 @@
 Welcome! 
 
-This is a minimal example of a book based on R Markdown and **bookdown** (https://paritoshkroy.github.io/ApproximateGP/). 
-
-This template provides a skeleton file structure that you can edit to create your book. 
-
-The contents inside the .Rmd files provide some pointers to help you get started, but feel free to also delete the content in each file and start fresh.
-
+The repository includes the source files used to prepare the **webpage** (https://paritoshkroy.github.io/ApproximateGP/), which outline the Gaussian process approximation methods implemented in Stan. Artificial datasets are analysed to illustrate the methods.

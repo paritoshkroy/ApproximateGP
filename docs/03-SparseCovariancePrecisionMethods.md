@@ -1,10 +1,14 @@
 # Sparse Covariance or Precision Methods {#sparse}
 
+## SPDE Approach
+
 ## Vecchia approximation
 
 ## Nearest neighbor Gaussian process
 
 ## Sparse Vecchia Gaussian process
+
+
 
 ## Hierarchical Vecchia Gaussian process
 

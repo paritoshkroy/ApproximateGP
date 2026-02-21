@@ -1,8 +1,10 @@
-# Low Rank Approximation {#lowrank}
+# Low Rank (Basis Function) Approximation {#lowrank}
+
+## Basis Function Approximation
 
 ## Predictive Gaussian process
 
-## Hilbert space Gaussian process
+## Fixed Rank Kriging
 
 Cross-references make it easier for your readers to find and link to elements in your book.
 

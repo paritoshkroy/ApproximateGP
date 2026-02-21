@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Low Rank Approximation | A Review of Gaussian Process Approximation Methods Using Stan</title>
+  <title>Chapter 3 Low Rank (Basis Function) Approximation | A Review of Gaussian Process Approximation Methods Using Stan</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Low Rank Approximation | A Review of Gaussian Process Approximation Methods Using Stan" />
+  <meta property="og:title" content="Chapter 3 Low Rank (Basis Function) Approximation | A Review of Gaussian Process Approximation Methods Using Stan" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="paritoshkroy/ApproximateGP" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Low Rank Approximation | A Review of Gaussian Process Approximation Methods Using Stan" />
+  <meta name="twitter:title" content="Chapter 3 Low Rank (Basis Function) Approximation | A Review of Gaussian Process Approximation Methods Using Stan" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -147,29 +147,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#usage"><i class="fa fa-check"></i><b>1.1</b> Usage</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.2</b> Render book</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#preview-book"><i class="fa fa-check"></i><b>1.3</b> Preview book</a></li>
-</ul></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a></li>
 <li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#gaussian-processes"><i class="fa fa-check"></i><b>2.1</b> Gaussian processes</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="lowrank.html"><a href="lowrank.html"><i class="fa fa-check"></i><b>3</b> Low Rank Approximation</a>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#point-referenced-spatial-data"><i class="fa fa-check"></i><b>2.2</b> Point-referenced spatial data</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#modeling-point-referenced-spatial-data-using-gp"><i class="fa fa-check"></i><b>2.3</b> Modeling point-referenced spatial data using GP</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="lowrank.html"><a href="lowrank.html#predictive-gaussian-process"><i class="fa fa-check"></i><b>3.1</b> Predictive Gaussian process</a></li>
-<li class="chapter" data-level="3.2" data-path="lowrank.html"><a href="lowrank.html#hilbert-space-gaussian-process"><i class="fa fa-check"></i><b>3.2</b> Hilbert space Gaussian process</a></li>
-<li class="chapter" data-level="3.3" data-path="lowrank.html"><a href="lowrank.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>3.3</b> Chapters and sub-chapters</a></li>
-<li class="chapter" data-level="3.4" data-path="lowrank.html"><a href="lowrank.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>3.4</b> Captioned figures and tables</a></li>
+<li class="chapter" data-level="2.3.1" data-path="introduction.html"><a href="introduction.html#inference-procedure"><i class="fa fa-check"></i><b>2.3.1</b> Inference Procedure</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introduction.html"><a href="introduction.html#response-gp-in-stan"><i class="fa fa-check"></i><b>2.4</b> Response GP in Stan</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="introduction.html"><a href="introduction.html#spatial-interpolation"><i class="fa fa-check"></i><b>2.4.1</b> Spatial Interpolation</a></li>
+<li class="chapter" data-level="2.4.2" data-path="introduction.html"><a href="introduction.html#recovery-of-the-latent-component"><i class="fa fa-check"></i><b>2.4.2</b> Recovery of the Latent Component</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="introduction.html"><a href="introduction.html#hierarchical-representation-of-the-above-model"><i class="fa fa-check"></i><b>2.5</b> Hierarchical representation of the above model</a></li>
+<li class="chapter" data-level="2.6" data-path="introduction.html"><a href="introduction.html#latent-gp-in-stan"><i class="fa fa-check"></i><b>2.6</b> Latent GP in Stan</a></li>
+<li class="chapter" data-level="2.7" data-path="introduction.html"><a href="introduction.html#computational-complexity-in-analysing-large-datasets"><i class="fa fa-check"></i><b>2.7</b> Computational complexity in analysing large datasets</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="lowrank.html"><a href="lowrank.html"><i class="fa fa-check"></i><b>3</b> Low Rank (Basis Function) Approximation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="lowrank.html"><a href="lowrank.html#basis-function-approximation"><i class="fa fa-check"></i><b>3.1</b> Basis Function Approximation</a></li>
+<li class="chapter" data-level="3.2" data-path="lowrank.html"><a href="lowrank.html#predictive-gaussian-process"><i class="fa fa-check"></i><b>3.2</b> Predictive Gaussian process</a></li>
+<li class="chapter" data-level="3.3" data-path="lowrank.html"><a href="lowrank.html#fixed-rank-kriging"><i class="fa fa-check"></i><b>3.3</b> Fixed Rank Kriging</a></li>
+<li class="chapter" data-level="3.4" data-path="lowrank.html"><a href="lowrank.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>3.4</b> Chapters and sub-chapters</a></li>
+<li class="chapter" data-level="3.5" data-path="lowrank.html"><a href="lowrank.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>3.5</b> Captioned figures and tables</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="sparse.html"><a href="sparse.html"><i class="fa fa-check"></i><b>4</b> Sparse Covariance or Precision Methods</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="sparse.html"><a href="sparse.html#vecchia-approximation"><i class="fa fa-check"></i><b>4.1</b> Vecchia approximation</a></li>
-<li class="chapter" data-level="4.2" data-path="sparse.html"><a href="sparse.html#nearest-neighbor-gaussian-process"><i class="fa fa-check"></i><b>4.2</b> Nearest neighbor Gaussian process</a></li>
-<li class="chapter" data-level="4.3" data-path="sparse.html"><a href="sparse.html#sparse-vecchia-gaussian-process"><i class="fa fa-check"></i><b>4.3</b> Sparse Vecchia Gaussian process</a></li>
-<li class="chapter" data-level="4.4" data-path="sparse.html"><a href="sparse.html#hierarchical-vecchia-gaussian-process"><i class="fa fa-check"></i><b>4.4</b> Hierarchical Vecchia Gaussian process</a></li>
+<li class="chapter" data-level="4.1" data-path="sparse.html"><a href="sparse.html#spde-approach"><i class="fa fa-check"></i><b>4.1</b> SPDE Approach</a></li>
+<li class="chapter" data-level="4.2" data-path="sparse.html"><a href="sparse.html#vecchia-approximation"><i class="fa fa-check"></i><b>4.2</b> Vecchia approximation</a></li>
+<li class="chapter" data-level="4.3" data-path="sparse.html"><a href="sparse.html#nearest-neighbor-gaussian-process"><i class="fa fa-check"></i><b>4.3</b> Nearest neighbor Gaussian process</a></li>
+<li class="chapter" data-level="4.4" data-path="sparse.html"><a href="sparse.html#sparse-vecchia-gaussian-process"><i class="fa fa-check"></i><b>4.4</b> Sparse Vecchia Gaussian process</a></li>
+<li class="chapter" data-level="4.5" data-path="sparse.html"><a href="sparse.html#hierarchical-vecchia-gaussian-process"><i class="fa fa-check"></i><b>4.5</b> Hierarchical Vecchia Gaussian process</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="spectral.html"><a href="spectral.html"><i class="fa fa-check"></i><b>5</b> Spectral Approximation Methods</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="spectral.html"><a href="spectral.html#hilbert-space-gp"><i class="fa fa-check"></i><b>5.1</b> Hilbert space GP</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -192,16 +206,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="lowrank" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Low Rank Approximation<a href="lowrank.html#lowrank" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="predictive-gaussian-process" class="section level2 hasAnchor" number="3.1">
-<h2><span class="header-section-number">3.1</span> Predictive Gaussian process<a href="lowrank.html#predictive-gaussian-process" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h1><span class="header-section-number">Chapter 3</span> Low Rank (Basis Function) Approximation<a href="lowrank.html#lowrank" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="basis-function-approximation" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Basis Function Approximation<a href="lowrank.html#basis-function-approximation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="hilbert-space-gaussian-process" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Hilbert space Gaussian process<a href="lowrank.html#hilbert-space-gaussian-process" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="predictive-gaussian-process" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Predictive Gaussian process<a href="lowrank.html#predictive-gaussian-process" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="fixed-rank-kriging" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Fixed Rank Kriging<a href="lowrank.html#fixed-rank-kriging" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Cross-references make it easier for your readers to find and link to elements in your book.</p>
 </div>
-<div id="chapters-and-sub-chapters" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> Chapters and sub-chapters<a href="lowrank.html#chapters-and-sub-chapters" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="chapters-and-sub-chapters" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Chapters and sub-chapters<a href="lowrank.html#chapters-and-sub-chapters" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>There are two steps to cross-reference any heading:</p>
 <ol style="list-style-type: decimal">
 <li>Label the heading: <code># Hello world {#nice-label}</code>.
@@ -215,8 +232,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ol>
 </div>
-<div id="captioned-figures-and-tables" class="section level2 hasAnchor" number="3.4">
-<h2><span class="header-section-number">3.4</span> Captioned figures and tables<a href="lowrank.html#captioned-figures-and-tables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="captioned-figures-and-tables" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Captioned figures and tables<a href="lowrank.html#captioned-figures-and-tables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Figures and tables <em>with captions</em> can also be cross-referenced from elsewhere in your book using <code>\@ref(fig:chunk-label)</code> and <code>\@ref(tab:chunk-label)</code>, respectively.</p>
 <p>See Figure <a href="lowrank.html#fig:nice-fig">3.1</a>.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="lowrank.html#cb3-1" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, .<span class="dv">1</span>, .<span class="dv">1</span>))</span>

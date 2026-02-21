@@ -4,6 +4,7 @@ repo: https://github.com/paritoshkroy/ApproximateGP
 output_dir: docs
 rmd_files: ["index.Rmd", "01-Introduction.Rmd",
             "02-LowRankMethods.Rmd",
-            "03-SparseCovariancePrecisionMethods.Rmd"]
+            "03-SparseCovariancePrecisionMethods.Rmd",
+            "04-SpectralApproximation.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes

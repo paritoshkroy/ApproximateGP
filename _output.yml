@@ -3,11 +3,11 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">A Minimal Book Example</a></li>
+        <li><a href="./">A Review of Gaussian Process Approximation Methods in Spatial Models Using Stan</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
-    download: ["pdf", "epub"]
+        <li><a href="https://paritoshkroy.github.io/ApproximateGP/" target="blank">Published here</a></li>
+    edit: https://github.com/paritoshkroy/ApproximateGP/edit/docs/%s
+    download: ["pdf"]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

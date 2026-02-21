@@ -1,7 +1,7 @@
 --- 
-title: "A Review of Gaussian Process Approximation Methods Using Stan"
+title: "A Review of Gaussian Process Approximation Methods in Spatial Models Using Stan"
 author: "Paritosh Kumar Roy"
-date: "2026-02-20"
+date: "2026-02-21"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]

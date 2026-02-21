@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Sparse Covariance or Precision Methods | A Review of Gaussian Process Approximation Methods Using Stan</title>
+  <title>Chapter 4 Sparse Covariance or Precision Methods | A Review of Gaussian Process Approximation Methods in Spatial Models Using Stan</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Sparse Covariance or Precision Methods | A Review of Gaussian Process Approximation Methods Using Stan" />
+  <meta property="og:title" content="Chapter 4 Sparse Covariance or Precision Methods | A Review of Gaussian Process Approximation Methods in Spatial Models Using Stan" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="paritoshkroy/ApproximateGP" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Sparse Covariance or Precision Methods | A Review of Gaussian Process Approximation Methods Using Stan" />
+  <meta name="twitter:title" content="Chapter 4 Sparse Covariance or Precision Methods | A Review of Gaussian Process Approximation Methods in Spatial Models Using Stan" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -29,7 +29,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="Paritosh Kumar Roy" />
 
 
-<meta name="date" content="2026-02-20" />
+<meta name="date" content="2026-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -130,6 +130,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -185,6 +208,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="5.1" data-path="spectral.html"><a href="spectral.html#hilbert-space-gp"><i class="fa fa-check"></i><b>5.1</b> Hilbert space GP</a></li>
 </ul></li>
+<li class="chapter" data-level="6" data-path="variational-bayesian-inference.html"><a href="variational-bayesian-inference.html"><i class="fa fa-check"></i><b>6</b> Variational Bayesian Inference</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="variational-bayesian-inference.html"><a href="variational-bayesian-inference.html#equations"><i class="fa fa-check"></i><b>6.1</b> Equations</a></li>
+<li class="chapter" data-level="6.2" data-path="variational-bayesian-inference.html"><a href="variational-bayesian-inference.html#theorems-and-proofs"><i class="fa fa-check"></i><b>6.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="6.3" data-path="variational-bayesian-inference.html"><a href="variational-bayesian-inference.html#callout-blocks"><i class="fa fa-check"></i><b>6.3</b> Callout blocks</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://paritoshkroy.github.io/ApproximateGP/" target="blank">Published here</a></li>
 
@@ -197,7 +226,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Review of Gaussian Process Approximation Methods Using Stan</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Review of Gaussian Process Approximation Methods in Spatial Models Using Stan</a>
           </h1>
         </div>
 

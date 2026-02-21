@@ -1,7 +1,7 @@
 --- 
 title: "A Minimal Book Example"
 author: "Paritosh Kumar Roy"
-date: "`r Sys.Date()`"
+date: "2026-02-20"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -12,8 +12,8 @@ description: |
   The HTML output format for this example is bookdown::gitbook,
   set in the _output.yml file.
 link-citations: yes
-github-repo: seankross/bookdown-start
-url: 'http\://seankross.com/bookdown-start/'
+github-repo: paritoshkroy/ApproximateGP
+url: 'https://github.com/paritoshkroy/ApproximateGP'
 ---
 
 # About
@@ -38,7 +38,8 @@ You can render the HTML version of this example book without changing anything:
 
 Or build the book from the R console:
 
-```{r, eval=FALSE}
+
+``` r
 bookdown::render_book()
 ```
 
@@ -48,14 +49,10 @@ To render this example to PDF as a `bookdown::pdf_book`, you'll need to install 
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
 
-```{r eval=FALSE}
+
+``` r
 bookdown::serve_book()
 ```
 
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+

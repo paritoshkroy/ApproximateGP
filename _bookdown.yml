@@ -1,7 +1,9 @@
 book_filename: "bookdown-start"
 chapter_name: "Chapter "
-repo: https://github.com/seankross/bookdown-start
+repo: https://github.com/paritoshkroy/ApproximateGP
 output_dir: docs
-rmd_files: ["index.Rmd", "01-Introduction.Rmd", "02-Literature-Review.Rmd"]
+rmd_files: ["index.Rmd", "01-Introduction.Rmd",
+            "02-LowRankMethods.Rmd",
+            "03-SparseCovariancePrecisionMethods.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes

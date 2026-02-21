@@ -1,4 +1,28 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.R
+!.stan
+!.rda
+# etc...
+
+# ...even if they are in subdirectories
+!*/
+
+docs/*
+!docs/*.*
+
+data/*
+!data/*.*
+
+Rfiles/*
+!Rfiles/*.R
+
+!*.Rmd
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
 .Rproj.user
-.Rhistory
-.RData
-.Ruserdata

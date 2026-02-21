@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Hello bookdown | A Review of Gaussian Process Approximation Methods Using Stan</title>
+  <title>Chapter 4 Parts | A Review of Gaussian Process Approximation Methods Using Stan</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Hello bookdown | A Review of Gaussian Process Approximation Methods Using Stan" />
+  <meta property="og:title" content="Chapter 4 Parts | A Review of Gaussian Process Approximation Methods Using Stan" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="paritoshkroy/ApproximateGP" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Hello bookdown | A Review of Gaussian Process Approximation Methods Using Stan" />
+  <meta name="twitter:title" content="Chapter 4 Parts | A Review of Gaussian Process Approximation Methods Using Stan" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -36,8 +36,8 @@ set in the _output.yml file.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="cross.html"/>
+<link rel="prev" href="cross.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -203,59 +203,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="hello-bookdown" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Hello bookdown<a href="hello-bookdown.html#hello-bookdown" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (<code>#</code>) per .Rmd file.</p>
-<div id="a-section" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> A section<a href="hello-bookdown.html#a-section" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>All chapter sections start with a second-level (<code>##</code>) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.</p>
-<div id="an-unnumbered-section" class="section level3 unnumbered hasAnchor">
-<h3>An unnumbered section<a href="hello-bookdown.html#an-unnumbered-section" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Chapters and sections are numbered by default. To un-number a heading, add a <code>{.unnumbered}</code> or the shorter <code>{-}</code> at the end of the heading, like in this section.</p>
+<div id="parts" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Parts<a href="parts.html#parts" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.</p>
+<p>Add a numbered part: <code># (PART) Act one {-}</code> (followed by <code># A chapter</code>)</p>
+<p>Add an unnumbered part: <code># (PART\*) Act one {-}</code> (followed by <code># A chapter</code>)</p>
+<p>Add an appendix as a special kind of un-numbered part: <code># (APPENDIX) Other stuff {-}</code> (followed by <code># A chapter</code>). Chapters in an appendix are prepended with letters instead of numbers.</p>
 
-</div>
-</div>
-<div id="low-rank-approximation" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Low Rank Approximation<a href="hello-bookdown.html#low-rank-approximation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="predictive-gaussian-process" class="section level3 hasAnchor" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Predictive Gaussian process<a href="hello-bookdown.html#predictive-gaussian-process" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="spde" class="section level3 hasAnchor" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> SPDE<a href="hello-bookdown.html#spde" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="hilbert-space-gaussian-process" class="section level3 hasAnchor" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> Hilbert space Gaussian process<a href="hello-bookdown.html#hilbert-space-gaussian-process" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-</div>
-<div id="sparse-precision-matrix" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Sparse Precision Matrix<a href="hello-bookdown.html#sparse-precision-matrix" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="vecchias-approximation" class="section level3 hasAnchor" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Vecchia’s approximation<a href="hello-bookdown.html#vecchias-approximation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="nearest-neighbor-gaussian-process" class="section level3 hasAnchor" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> Nearest neighbor Gaussian process<a href="hello-bookdown.html#nearest-neighbor-gaussian-process" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="sparse-vecchia-gaussian-process" class="section level3 hasAnchor" number="2.3.3">
-<h3><span class="header-section-number">2.3.3</span> Sparse Vecchia Gaussian process<a href="hello-bookdown.html#sparse-vecchia-gaussian-process" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-</div>
-<div id="sparse-covariance-matrix" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> Sparse Covariance Matrix<a href="hello-bookdown.html#sparse-covariance-matrix" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-</div>
-<div id="sparse-covariance-and-precision-matrix" class="section level2 hasAnchor" number="2.5">
-<h2><span class="header-section-number">2.5</span> Sparse Covariance and Precision Matrix<a href="hello-bookdown.html#sparse-covariance-and-precision-matrix" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="hierarchical-gaussian-process" class="section level3 hasAnchor" number="2.5.1">
-<h3><span class="header-section-number">2.5.1</span> Hierarchical Gaussian process<a href="hello-bookdown.html#hierarchical-gaussian-process" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="cross.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cross.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -286,7 +248,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-Introduction.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-SparseCovariancePrecisionMethods.Rmd",
 "text": "Edit"
 },
 "history": {

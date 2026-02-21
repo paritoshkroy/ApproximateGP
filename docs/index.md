@@ -1,5 +1,5 @@
 --- 
-title: "Gaussian Process Approximation Methods Using Stan"
+title: "A Review of Gaussian Process Approximation Methods Using Stan"
 author: "Paritosh Kumar Roy"
 date: "2026-02-20"
 site: bookdown::bookdown_site

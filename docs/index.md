@@ -13,7 +13,7 @@ description: |
   set in the _output.yml file.
 link-citations: yes
 github-repo: paritoshkroy/ApproximateGP
-url: 'https://github.com/paritoshkroy/ApproximateGP'
+url: 'https://paritoshkroy.github.io/ApproximateGP/'
 ---
 
 # About

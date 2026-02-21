@@ -3,14 +3,10 @@
 
 # But not these files...
 !.gitignore
-!.R
-!.stan
-!.rda
+!*.Rmd
 # etc...
 
 # ...even if they are in subdirectories
-!*/
-
 docs/*
 !docs/*.*
 
@@ -20,10 +16,10 @@ data/*
 Rfiles/*
 !Rfiles/*.R
 
-!*.Rmd
 
 # knitr and R markdown default cache directories
 *_cache/
 /cache/
-.Rproj.user/
+.Rproj.user
 .Rproj.user/*.*
+

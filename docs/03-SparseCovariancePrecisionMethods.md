@@ -1,4 +1,12 @@
-# Parts
+# Sparse Covariance or Precision Methods {#sparse}
+
+## Vecchia approximation
+
+## Nearest neighbor Gaussian process
+
+## Sparse Vecchia Gaussian process
+
+## Hierarchical Vecchia Gaussian process
 
 You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file. 
 
